@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+             background-color: #e6f0ff;
+             font-family: Arial, sans-serif;
+        }
+
+        .login-box {
+            margin: 100px auto;
+            width: 400px;
+            background-color: #ffffff;
+            border: 2px solid #dcdde1;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2f3640;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 25%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4cd137;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #e84118;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #44bd32;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c23616;
+        }
+
+        .btn-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    </style>
+    </head>
+    <body>
+  <center>
+    <h2>Login</h2>
+
+    <table border="1" cellpadding="10">
+      <tr>
+        <td>
+          <form action="adminlogin.jsp">
+            <center>
+              Username<br>
+              <input type="text" name="username"><br><br>
+
+              Password<br>
+              <input type="password" name="password"><br><br>
+
+              <input type="submit" value="Submit">
+              <input type="reset" value="Cancel">
+            </center>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </center>
+    </body>
+</html>
