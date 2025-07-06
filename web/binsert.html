@@ -1,0 +1,120 @@
+bfetch<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>insertion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        td {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+    </head>
+    <body>
+    <center>
+        <form action="binsert.jsp">
+            <h1>Insert Book Details</h1>
+        <table border="2"> 
+            <tr>
+                <td><b>Book-Id</b></td>
+                <td><input type="text" name="n1"></td>
+            </tr>
+            <tr>
+                <td><b>Book-Name</b></td>
+                <td><input type="text" name="n2"></td>
+            </tr>
+            <tr>
+                <td><b>Subject</b></td>
+                <td><input type="text"  name="n3"></td>
+            </tr>
+            <tr>
+                <td><b>Author</b></td>
+                <td><input type="text"  name="n4"></td>
+            </tr>
+            <tr>
+                <td><b>publish</b></td>
+                <td><input type="text"  name="n5"></td>
+            </tr>
+            <tr>
+                <td><b>Price</b></td>
+                <td><input type="text"  name="n6"></td>
+            </tr>
+            <tr>
+                <td><b>Quantity</b></td>
+                <td><input type="text"  name="n7"></td>
+            </tr>
+            <tr>
+                <td><b>Department</b></td>
+                <td><input type="text"  name="n8"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+                <td><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    </body>
+</html>
