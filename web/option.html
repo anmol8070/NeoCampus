@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Option Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #00796b;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 20px;
+            margin: auto;
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        a {
+            display: inline-block;
+            width: 120px;
+            padding: 15px 0;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        a[href*="book"] {
+            background-color: #2196f3;
+        }
+
+        a[href*="student"] {
+            background-color: #4caf50;
+        }
+
+        a[href*="staff"] {
+            background-color: #ff9800;
+        }
+
+        a[href*="Query"] {
+            background-color: #9c27b0;
+        }
+
+        .logout-btn {
+            background-color: #f44336; 
+        }
+
+        a:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Portal Access</h2>
+
+        <table border="1" cellpadding="30" cellspacing="20">
+            <tr>
+                <td align="center">
+                    <a href="bookOption.html">Book</a>
+                </td>
+                <td align="center">
+                    <a href="studentoption.html">Student</a>
+                </td>
+                <td align="center">
+                    <a href="staffOption.html">Staff</a>
+                </td>
+                <td align="center">
+                    <a href="viewAllQuery.jsp">Query</a>
+                </td>
+                <td align="center">
+                    <a href="index.html" class="logout-btn">Logout</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
