@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Update</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background-color: #f2f7fc;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            margin: 80px auto;
+            width: 400px;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 12px;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 95%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+        }
+
+        input[type="reset"] {
+            background-color: #e74c3c;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c0392b;
+        }
+    </style>
+    </head>
+    <body>
+        <form action="bupdate.jsp">
+            <h1>Update Book Details</h1>
+        <table border="2"> 
+            <tr>
+                <td><b>BookId</b></td>
+                <td><input type="text" name="n1"></td>
+            </tr>
+            <tr>
+                <td><b>Quantity</b></td>
+                <td><input type="text"  name="n2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+                <td><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
