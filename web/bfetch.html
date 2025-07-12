@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>search perticular Book</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background-color: rgb(235, 245, 255); 
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 400px;
+            margin: 100px auto;
+            background-color: rgb(255, 255, 255); /* white box */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(40, 60, 90);
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid rgb(200, 200, 200);
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(52, 152, 219); /* blue */
+        }
+
+        input[type="reset"] {
+            background-color: rgb(231, 76, 60); /* red */
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(41, 128, 185);
+        }
+
+        input[type="reset"]:hover {
+            background-color: rgb(192, 57, 43);
+        }
+    </style>
+    </head>
+    <body>
+        <form action="bfetch.jsp">
+            <h1>Fetch Perticular Book Details</h1>
+        <table border="2"> 
+            <tr>
+                <td><b>Book-Name</b></td>
+                <td><input type="text" name="n1"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+                <td><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
