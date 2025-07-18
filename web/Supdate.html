@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Update Student Data</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background-color: #f9f5e3;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            margin: 100px auto;
+            width: 400px;
+            background-color: #f6caca;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2e2e2e;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 8px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+        }
+
+        input[type="reset"] {
+            background-color: #d9534f;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c9302c;
+        }
+    </style>
+    </head>
+    <body>
+        <form action="supdate.jsp">
+            <h1>Update Student Details</h1>
+        <table border="2"> 
+            <tr>
+                <td><b>Roll-No</b></td>
+                <td><input type="text" name="n1"></td>
+            </tr>
+            <tr>
+                <td><b>MobileNo</b></td>
+                <td><input type="text"  name="n2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+                <td><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
