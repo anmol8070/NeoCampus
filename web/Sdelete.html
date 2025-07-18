@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>delete</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background-color: #fff5e6; /* soft peach background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            margin: 100px auto;
+            width: 400px;
+            background-color: #ffe6cc; /* light orange */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            width: 95%;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #27ae60;
+        }
+
+        input[type="reset"] {
+            background-color: #e74c3c;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #219150;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c0392b;
+        }
+    </style>
+    </head>
+    <body>
+        <form action="sdelete.jsp">
+            <h1>Delete Student Details</h1>
+        <table border="2"> 
+             <tr>
+                <td><b>Branch</b></td>
+                <td><input type="text" name="n1"></td>
+            </tr>
+            <tr>
+                <td><b>Roll-No</b></td>
+                <td><input type="text"  name="n2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"></td>
+                <td><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
