@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Staff Details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+            font-family: Arial, sans-serif;
+        }
+
+        .form-box {
+            background-color: #fefefe;
+            margin: 50px auto;
+            padding: 30px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #ccc;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #bbb;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 45%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #26a69a;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background-color: #ef5350;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2bbbad;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #e53935;
+        }
+
+        .btn-row {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <form action="sfinsert.jsp">
+            <h1>Insert Staff Details</h1>
+            <table>
+                <tr>
+                    <td>Staff-Id</td>
+                    <td><input type="text" name="n1"></td>
+                </tr>
+                <tr>
+                    <td>Staff-FName</td>
+                    <td><input type="text" name="n2"></td>
+                </tr>
+                <tr>
+                    <td>Staff-LName</td>
+                    <td><input type="text" name="n3"></td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td><input type="text" name="n4"></td>
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td><input type="text" name="n5"></td>
+                </tr>
+                <tr>
+                    <td>MobileNo</td>
+                    <td><input type="text" name="n6"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="n7"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="text" name="n8"></td>
+                </tr>
+                <tr class="btn-row">
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
