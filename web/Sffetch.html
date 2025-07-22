@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search Staff</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f9f3e3; /* soft creamy background */
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            margin: 80px auto;
+            width: 420px;
+            padding: 30px;
+            background-color: #fffaf0;
+            border: 2px solid #dcdcdc;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            text-align: center;
+            color: #5d4037;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 12px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 45%;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #388e3c;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+
+        .btn-row {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="sffetch.jsp">
+            <h1>Search Staff Details</h1>
+            <table>
+                <tr>
+                    <td>Department</td>
+                    <td><input type="text" name="n1"></td>
+                </tr>
+                <tr>
+                    <td>Staff-Id</td>
+                    <td><input type="text" name="n2"></td>
+                </tr>
+                <tr class="btn-row">
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
